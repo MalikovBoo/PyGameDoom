@@ -52,6 +52,15 @@ def map_generate(x, y):
                     if random.randint(0, 10) > 9:
                         map[i][j] = 'W'
 
+                map[st.MAP_PLAYER_Y][st.MAP_PLAYER_X - 1] = '.'
+                map[st.MAP_PLAYER_Y][st.MAP_PLAYER_X + 1] = '.'
+                map[st.MAP_PLAYER_Y - 1][st.MAP_PLAYER_X] = '.'
+                map[st.MAP_PLAYER_Y - 1][st.MAP_PLAYER_X - 1] = '.'
+                map[st.MAP_PLAYER_Y - 1][st.MAP_PLAYER_X + 1] = '.'
+                # Задняя стенка
+                # map[st.MAP_PLAYER_Y + 1][st.MAP_PLAYER_X] = '.'
+                # map[st.MAP_PLAYER_Y + 1][st.MAP_PLAYER_X - 1] = '.'
+                # map[st.MAP_PLAYER_Y + 1][st.MAP_PLAYER_X + 1] = '.'
     return map
 
 
