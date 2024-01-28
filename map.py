@@ -1,15 +1,7 @@
 import settings as st
+import map_generator as mgr
 
-text_map = [
-    'WWWWWWWWWWWW',
-    'W..........W',
-    'W....WW....W',
-    'W......W...W',
-    'W..W.......W',
-    'W....WW....W',
-    'W..........W',
-    'WWWWWWWWWWWW'
-]
+text_map = mgr.map_create()
 
 world_map = set()
 for j, row in enumerate(text_map):

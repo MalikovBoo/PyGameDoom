@@ -6,11 +6,20 @@ HEIGHT = 800
 HALF_WIDTH = WIDTH // 2
 HALF_HEIGHT = HEIGHT // 2
 FPS = 60
-TILE = 100
+TILE = 50
 
 # map settings
 MAP_SCALE = 7
 MAP_DEPTH = 100
+MAP_WIDTH = 24
+MAP_HEIGHT = 16
+
+MAP_PLAYER_X = WIDTH // 100
+MAP_PLAYER_Y = HEIGHT // 50 - 2
+
+MAP_FINISH_X = 14
+MAP_FINISH_Y = 2
+
 
 # ray casting settings
 FOV = math.pi / 3
@@ -24,8 +33,8 @@ SCALE = WIDTH / NUM_RAYS
 PROJ_COEFF = 3 * DISTANCE * TILE
 
 # player settings
-player_pos = (HALF_WIDTH, HALF_HEIGHT)
-player_angle = 0
+player_pos = (MAP_PLAYER_X*TILE, MAP_PLAYER_Y*TILE)
+player_angle = - math.pi / 2
 player_speed = 2
 
 # colors
