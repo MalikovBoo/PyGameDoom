@@ -21,7 +21,7 @@ def game_start():
         sc.fill(st.BLACK)
         player.movement()
 
-        drawing.background()
+        drawing.background(player.angle)
         drawing.world(player.pos, player.angle)
         drawing.fps(clock)
         drawing.minimap(player)
